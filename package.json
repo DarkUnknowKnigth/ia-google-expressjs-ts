@@ -1,99 +1,41 @@
 {
-  
   "devDependencies": {
-  
-    
-  "@types/express": "^5.0.3",
-  
-    
-  "@types/node": "^24.0.3",
-  
-    
-  "ts-node": "^10.9.2",
-  
-    
-  "typescript": "^5.8.3"
-  
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "ts-node-dev": "latest"
   },
-  
   "name": "iatest",
-  
   "version": "1.0.0",
-  
-  "main": "index.js",
-  
+  "main": "dist/app.js",
+  "type": "module",
   "dependencies": {
-  
-    
-  "@google/genai": "^1.0.0",
-  
-    
-  "acorn": "^8.15.0",
-  
-    
-  "acorn-walk": "^8.3.4",
-  
-    
-  "arg": "^4.1.3",
-  
-    
-  "create-require": "^1.1.1",
-  
-    
-  "diff": "^4.0.2",
-  
-    
-  "dotenv": "^16.5.0",
-  
-    
-  "env": "^0.0.2",
-  
-    
-  "express": "^5.1.0",
-  
-    
-  "make-error": "^1.3.6",
-  
-    
-  "undici-types": "^7.8.0",
-  
-    
-  "v8-compile-cache-lib": "^3.0.1",
-  
-    
-  "yn": "^3.1.1"
-  
+    "@google/genai": "^1.0.0",
+    "acorn": "^8.15.0",
+    "acorn-walk": "^8.3.4",
+    "arg": "^4.1.3",
+    "create-require": "^1.1.1",
+    "diff": "^4.0.2",
+    "dotenv": "^16.5.0",
+    "env": "^0.0.2",
+    "express": "^5.1.0",
+    "make-error": "^1.3.6",
+    "undici-types": "^7.8.0",
+    "v8-compile-cache-lib": "^3.0.1",
+    "yn": "^3.1.1"
   },
-  
   "scripts": {
-  
-    
-  "build": "tsc",
-  
-    
-  "start": "node dist/index.js",
-  
-    
-  "dev": "ts-node src/app.ts"
-  
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsc && node dist/app.js"
   },
-  
   "keywords": [
-  
-    
-  "Test IA ",
-  
-    
-  "express  js",
-  
-    
-  "Google IA studio"
-  
+    "Test IA ",
+    "express  js",
+    "Google IA studio"
   ],
-  
   "author": "Jose Daniel Morales Ocampo",
-  
   "license": "ISC",
-  
   "description": "Aplicacion para probar generar texto e imagenes con google ia studio y express para chatbots"
 }
